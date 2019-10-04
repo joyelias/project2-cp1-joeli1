@@ -1,46 +1,13 @@
-# lecture-9-react
-
-Let's get React up and running with Flask. Run these commands in your Project 2 (or scratch) folder.
-
-## Upgrade Node version to 7
-
-```$ nvm install 7```
-
-## Install Webpack
-
-This line installs Webpack on your Cloud9 workspace.
-
-```$npm install webpack --save-dev```
-
-## Install `npm` dependencies from `package.json`
-
-This line starts `npm`, which looks inside our `package.json` file, retrieves a list of
-packages, and installs them to the `node_modules` folder inside your repository. `node_modules` folder **does not** need to be pushed to Heroku or GitHub.
-
-```$ npm install```
-
-**Note: This command MUST be ran from the folder that contains package.json! You will get an error if you are in a different folder!**
-
-## Compile Javascript using Webpack
-
-This line starts up Webpack, which looks inside `webpack.config.js`, loads
-configuration options, and starts transpiling your JS code into `static/script.js`.
-
-```$ npm run watch```
-
-(The program should not stop running. Leave it running.)
-
-## Run the web app
-
-Open a new terminal in your AWS Cloud9 environment (click the little green + button near your current terminal and choose 'New Terminal'). Run `app.py` (from the same folder, but new terminal) and verify that the React renders. You should see "Hello World from React!" in the preview.
-
-**Do not manually edit `static/script.js`! It will update when you make changes. You do need to push this file to Heroku and GitHub**
-
-## Edit HTML
-
-Find the text that says "Hello World from React!" Make a change. Your webpack should still be running in the other terminal (and some logs will spit out). Try previewing the changes in the Preview Window in AWS. Notice that nothing is updating. You need to click 'Pop out to New Window', and hard refresh the browser (see command below). 
-
-PS This is a known problem for a bunch of people. Unfortunately, there is no known fix besides turning off the cache option for the whole browser (which we don't want to do).
-
-**You will always need to do a hard refresh (Ctrl+R/Cmd+Shift+R) of an external tab in your browser (while Webpack is running) to see changes**
-
+<h1>Project 2 - Checkpoint 1</h1>
+<h4>What was the theme you chose?</h4>
+<p> After weeks on end of struggling, I've finally gotten something. The theme of my project is Never Give Up! I Feel this way because I contemplated on numerous occasions just giving up and trying harder on the next project but I perservered. <br>
+<h4>What are at least 3 issues you encountered with your project? How did you fix them?</h4>
+<p>1. I followed the powerpoint slides to create the project and the powerpoint slides didn't get me very far.<br>
+<p>2. Trying to push to heroku was a STRUGGLE! To fix my deployment issue, I had to update my requirements file. I learned this from project 1.<br>
+<p>3. I wasn't sure how about the final layout. My app doesn't really resemble a chat room but I guess there is always room for improvement.<br>
+<h4>What are known problems, if any, with your project?</h4>
+<p>1. There is no database.<br>
+<p>2. To create a hack for not having a database, I wanted to display the console log messages to the html page but I couldn't figure that out either.<br>
+<h4>What would you do to improve your project in the future?</h4>
+<p>I want to update the styling -- I really didn't style much.<br>
+<p>I want to add the database.<br>
